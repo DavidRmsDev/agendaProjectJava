@@ -31,14 +31,14 @@
             <Font name="System Bold Italic" size="18.0" />
          </font>
       </Label>
-      <TextField id="usuIniTextField" fx:id="usuIniTextField" layoutX="264.0" layoutY="500.0" prefHeight="21.0" prefWidth="224.0" />
       <Label layoutX="175.0" layoutY="505.0" text="Usuario:" />
       <Label layoutX="163.0" layoutY="562.0" text="Password:" />
+      <TextField id="usuIniTextField" fx:id="usuIniTextField" layoutX="264.0" layoutY="500.0" prefHeight="21.0" prefWidth="224.0" />
+      <PasswordField id="passIniTextField" fx:id="passIniTextField" layoutX="264.0" layoutY="557.0" prefHeight="27.0" prefWidth="224.0" />
       <Button id="btn_inicio" layoutX="307.0" layoutY="628.0" mnemonicParsing="false" onAction="#iniciar" prefHeight="21.0" prefWidth="136.0" text="Iniciar">
          <font>
             <Font name="System Italic" size="15.0" />
          </font>
       </Button>
-      <PasswordField id="passIniTextField" fx:id="passIniTextField" layoutX="264.0" layoutY="557.0" prefHeight="27.0" prefWidth="224.0" />
    </children>
 </AnchorPane>

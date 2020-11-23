@@ -1,118 +1,18 @@
-com.mysql.jdbc.exceptions.jdbc4.MySQLIntegrityConstraintViolationException: Duplicate entry '698698698' for key 'telefono'
-[Ljava.lang.StackTraceElement;@7d175461
+com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Table 'agenda.contactos' doesn't exist
+[Ljava.lang.StackTraceElement;@7bcdcbca
 
-com.mysql.jdbc.exceptions.jdbc4.MySQLIntegrityConstraintViolationException: Duplicate entry '666666666-10' for key 'telefono'
-[Ljava.lang.StackTraceElement;@3c6e2199
+com.mysql.jdbc.exceptions.jdbc4.MySQLIntegrityConstraintViolationException: Duplicate entry '666999880-1' for key 'telefono'
+[Ljava.lang.StackTraceElement;@792e8bfc
 
-com.mysql.jdbc.exceptions.jdbc4.MySQLIntegrityConstraintViolationException: Duplicate entry 'david' for key 'nickname'
-[Ljava.lang.StackTraceElement;@507073ba
+com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: PROCEDURE agendaproject.comprobarNombreUsuario does not exist
+[Ljava.lang.StackTraceElement;@3da196d2
 
-com.mysql.jdbc.exceptions.jdbc4.MySQLIntegrityConstraintViolationException: Duplicate entry 'david' for key 'nickname'
-[Ljava.lang.StackTraceElement;@5f3d2604
+com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: PROCEDURE agendaproject.comprobarNombreUsuario does not exist
+[Ljava.lang.StackTraceElement;@2b454839
 
-com.mysql.jdbc.exceptions.jdbc4.MySQLIntegrityConstraintViolationException: Duplicate entry 'david' for key 'nickname'
-[Ljava.lang.StackTraceElement;@5bebeb88
+com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: PROCEDURE agendaproject.comprobarNombreUsuario does not exist
+[Ljava.lang.StackTraceElement;@4824337a
 
-com.mysql.jdbc.exceptions.jdbc4.MySQLIntegrityConstraintViolationException: Duplicate entry 'david' for key 'nickname'
-[Ljava.lang.StackTraceElement;@1041a9b4
-
-com.mysql.jdbc.exceptions.jdbc4.MySQLIntegrityConstraintViolationException: Duplicate entry '123123123-16' for key 'telefono'
-[Ljava.lang.StackTraceElement;@668e4abc
-
-com.mysql.jdbc.exceptions.jdbc4.MySQLIntegrityConstraintViolationException: Duplicate entry '123123123-16' for key 'telefono'
-[Ljava.lang.StackTraceElement;@59bbfa03
-
-com.mysql.jdbc.exceptions.jdbc4.MySQLNonTransientConnectionException: Could not create connection to database server. Attempted reconnect 3 times. Giving up.
-[Ljava.lang.StackTraceElement;@375fddd1
-
-com.mysql.jdbc.exceptions.jdbc4.MySQLNonTransientConnectionException: Could not create connection to database server. Attempted reconnect 3 times. Giving up.
-[Ljava.lang.StackTraceElement;@58d14cd3
-
-com.mysql.jdbc.exceptions.jdbc4.MySQLNonTransientConnectionException: Could not create connection to database server. Attempted reconnect 3 times. Giving up.
-[Ljava.lang.StackTraceElement;@3754c245
-
-com.mysql.jdbc.exceptions.jdbc4.CommunicationsException: Communications link failure
-
-The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
-[Ljava.lang.StackTraceElement;@525f9822
-
-com.mysql.jdbc.exceptions.jdbc4.CommunicationsException: Communications link failure
-
-The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
-[Ljava.lang.StackTraceElement;@7a9d1aeb
-
-com.mysql.jdbc.exceptions.jdbc4.CommunicationsException: Communications link failure
-
-The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
-[Ljava.lang.StackTraceElement;@290a2c58
-
-com.mysql.jdbc.exceptions.jdbc4.CommunicationsException: Communications link failure
-
-The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
-[Ljava.lang.StackTraceElement;@73602f7
-
-com.mysql.jdbc.exceptions.jdbc4.CommunicationsException: Communications link failure
-
-The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
-[Ljava.lang.StackTraceElement;@7960cbb0
-
-com.mysql.jdbc.exceptions.jdbc4.CommunicationsException: Communications link failure
-
-The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
-[Ljava.lang.StackTraceElement;@406aade0
-
-com.mysql.jdbc.exceptions.jdbc4.CommunicationsException: Communications link failure
-
-The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
-[Ljava.lang.StackTraceElement;@2621cd94
-
-com.mysql.jdbc.exceptions.jdbc4.CommunicationsException: Communications link failure
-
-The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
-[Ljava.lang.StackTraceElement;@46a7d75d
-
-com.mysql.jdbc.exceptions.jdbc4.CommunicationsException: Communications link failure
-
-The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
-[Ljava.lang.StackTraceElement;@68f58c69
-
-com.mysql.jdbc.exceptions.jdbc4.CommunicationsException: Communications link failure
-
-The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
-[Ljava.lang.StackTraceElement;@471f0741
-
-com.mysql.jdbc.exceptions.jdbc4.CommunicationsException: Communications link failure
-
-The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
-[Ljava.lang.StackTraceElement;@9f46361
-
-com.mysql.jdbc.exceptions.jdbc4.CommunicationsException: Communications link failure
-
-The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
-[Ljava.lang.StackTraceElement;@f1e15fd
-
-com.mysql.jdbc.exceptions.jdbc4.CommunicationsException: Communications link failure
-
-The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
-[Ljava.lang.StackTraceElement;@3a6f2a2d
-
-com.mysql.jdbc.exceptions.jdbc4.CommunicationsException: Communications link failure
-
-The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
-[Ljava.lang.StackTraceElement;@79be5407
-
-com.mysql.jdbc.exceptions.jdbc4.CommunicationsException: Communications link failure
-
-The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
-[Ljava.lang.StackTraceElement;@4a1f3a89
-
-com.mysql.jdbc.exceptions.jdbc4.CommunicationsException: Communications link failure
-
-The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
-[Ljava.lang.StackTraceElement;@11427712
-
-com.mysql.jdbc.exceptions.jdbc4.CommunicationsException: Communications link failure
-
-The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
-[Ljava.lang.StackTraceElement;@30128c26
+com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: PROCEDURE agendaproject.comprobarNombreUsuario does not exist
+[Ljava.lang.StackTraceElement;@530ad796
 

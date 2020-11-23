@@ -8,7 +8,7 @@
   </information>
   <resources>
     <j2se version="1.6+" href="http://java.sun.com/products/autodl/j2se"/>
-    <jar href="AgendaProject.jar" size="6224930" download="eager" />
+    <jar href="AgendaProject.jar" size="6224938" download="eager" />
     <jar href="lib\SupremeMdiWindow.jar" size="161522" download="eager" />
     <jar href="lib\jfoenix-8.0.8.jar" size="2708772" download="eager" />
     <jar href="lib\jfoenix-9.0.8.jar" size="2419463" download="eager" />
