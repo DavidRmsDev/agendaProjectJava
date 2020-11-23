@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<conexion>
+	<dir>jdbc:mysql://localhost:3306/agenda</dir>
+	<user>root</user>
+	<password></password>
+</conexion>

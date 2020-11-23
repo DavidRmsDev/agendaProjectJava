@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" maxHeight="0.0" maxWidth="0.0" minHeight="-Infinity" minWidth="-Infinity" prefHeight="750.0" prefWidth="750.0" style="-fx-background-image: url(&quot;..\img\fondoPapel.jpg&quot;);" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controlador.FXMLNotasController">
+   <children>
+      <ImageView fitHeight="750.0" fitWidth="750.0" layoutX="67.0" layoutY="14.0" style="-fx-background-size: 100%;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <image>
+            <Image url="@../img/fondoPapel.jpg" />
+         </image>
+      </ImageView>
+      <Label layoutX="268.0" layoutY="50.0" text="NOTAS" textFill="RED">
+         <font>
+            <Font name="System Bold Italic" size="64.0" />
+         </font>
+      </Label>
+      <TableView id="dataGridView1" fx:id="dataGridView1" layoutX="111.0" layoutY="484.0" onKeyPressed="#borrar" onMouseClicked="#seleccionar" prefHeight="226.0" prefWidth="530.0">
+         <columns>
+            <TableColumn id="id" fx:id="columnaID" prefWidth="75.0" text="id" visible="false" />
+            <TableColumn fx:id="columnaNotas" prefWidth="75.0" text="Notas" visible="false" />
+         </columns>
+      </TableView>
+      <Label layoutX="130.0" layoutY="159.0" text="Título:" />
+      <Label layoutX="128.0" layoutY="194.0" text="Fecha:" />
+      <Label layoutX="132.0" layoutY="227.0" text="Nota:" />
+      <TextField id="campo_titulo" fx:id="campo_titulo" layoutX="233.0" layoutY="154.0" prefHeight="27.0" prefWidth="384.0" />
+      <TextField id="campo_fecha" fx:id="campo_fecha" editable="false" layoutX="233.0" layoutY="188.0" prefHeight="27.0" prefWidth="384.0" />
+      <Button id="btn_aniadir" layoutX="283.0" layoutY="382.0" mnemonicParsing="false" onAction="#insertar" text="Insertar" />
+      <Button id="btn_modificar" layoutX="484.0" layoutY="382.0" mnemonicParsing="false" onAction="#modificar" text="Modificar" />
+      <TextField id="textFieldID" fx:id="textFieldID" layoutX="715.0" layoutY="19.0" prefHeight="31.0" prefWidth="25.0" visible="false" />
+      <TextArea id="campo_nota" fx:id="campo_nota" layoutX="233.0" layoutY="222.0" prefHeight="145.0" prefWidth="384.0" />
+   </children>
+</AnchorPane>

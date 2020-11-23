@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<jnlp spec="1.0" xmlns:jfx="http://javafx.com" href="AgendaProject.jnlp">
+  <information>
+    <title>AgendaProject</title>
+    <vendor>David</vendor>
+    <description>null</description>
+    <offline-allowed/>
+  </information>
+  <resources>
+    <j2se version="1.6+" href="http://java.sun.com/products/autodl/j2se"/>
+    <jar href="AgendaProject.jar" size="6224930" download="eager" />
+    <jar href="lib\SupremeMdiWindow.jar" size="161522" download="eager" />
+    <jar href="lib\jfoenix-8.0.8.jar" size="2708772" download="eager" />
+    <jar href="lib\jfoenix-9.0.8.jar" size="2419463" download="eager" />
+    <jar href="lib\mysql-connector-java-5.1.48-bin.jar" size="1006959" download="eager" />
+  </resources>
+  <jfx:javafx-desc  width="800" height="600" main-class="controlador.Inicio"  name="AgendaProject" />
+  <update check="always"/>
+</jnlp>

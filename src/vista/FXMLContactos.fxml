@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" maxHeight="0.0" maxWidth="0.0" minHeight="-Infinity" minWidth="-Infinity" prefHeight="750.0" prefWidth="750.0" style="-fx-background-image: url(&quot;..\img\fondoPapel.jpg&quot;);" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controlador.FXMLContactosController">
+   <children>
+      <ImageView fitHeight="750.0" fitWidth="750.0" layoutX="67.0" layoutY="14.0" style="-fx-background-size: 100%;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <image>
+            <Image url="@../img/fondoPapel.jpg" />
+         </image>
+      </ImageView>
+      <Label layoutX="184.0" layoutY="50.0" text="CONTACTOS" textFill="RED">
+         <font>
+            <Font name="System Bold Italic" size="64.0" />
+         </font>
+      </Label>
+      <TableView id="dataGridView1" fx:id="dataGridView1" layoutX="111.0" layoutY="484.0" onKeyPressed="#borrar" onMouseClicked="#seleccionar" prefHeight="226.0" prefWidth="530.0">
+         <columns>
+            <TableColumn id="id" fx:id="columnaID" prefWidth="75.0" text="id" visible="false" />
+         </columns>
+      </TableView>
+      <Label layoutX="94.0" layoutY="159.0" text="Nombre:" />
+      <Label layoutX="87.0" layoutY="194.0" text="Apellidos:" />
+      <Label layoutX="90.0" layoutY="227.0" text="Teléfono:" />
+      <Label layoutX="87.0" layoutY="262.0" text="Dirección:" />
+      <Label layoutX="111.0" layoutY="296.0" text="Email:" />
+      <TextField id="campo_nombre" fx:id="campo_nombre" layoutX="233.0" layoutY="154.0" prefHeight="27.0" prefWidth="384.0" />
+      <TextField id="campo_apellidos" fx:id="campo_apellidos" layoutX="233.0" layoutY="188.0" prefHeight="27.0" prefWidth="384.0" />
+      <TextField id="campo_telefono" fx:id="campo_telefono" layoutX="233.0" layoutY="222.0" prefHeight="27.0" prefWidth="384.0" />
+      <TextField id="campo_direccion" fx:id="campo_direccion" layoutX="233.0" layoutY="256.0" prefHeight="27.0" prefWidth="384.0" />
+      <TextField id="campo_email" fx:id="campo_email" layoutX="233.0" layoutY="290.0" prefHeight="27.0" prefWidth="384.0" />
+      <Button id="btn_aniadir" layoutX="285.0" layoutY="382.0" mnemonicParsing="false" onAction="#insertar" text="Insertar" />
+      <Button id="btn_modificar" layoutX="496.0" layoutY="382.0" mnemonicParsing="false" onAction="#modificar" text="Modificar" />
+      <TextField id="textFieldID" fx:id="textFieldID" layoutX="715.0" layoutY="19.0" prefHeight="31.0" prefWidth="25.0" visible="false" />
+   </children>
+</AnchorPane>

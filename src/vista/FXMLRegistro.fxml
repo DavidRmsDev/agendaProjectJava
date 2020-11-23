@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" maxHeight="0.0" maxWidth="0.0" minHeight="-Infinity" minWidth="-Infinity" prefHeight="750.0" prefWidth="750.0" style="-fx-background-image: url(&quot;..\img\fondoPapel.jpg&quot;);" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controlador.FXMLRegistroController">
+   <children>
+      <ImageView fitHeight="750.0" fitWidth="750.0" layoutX="67.0" layoutY="14.0" style="-fx-background-size: 100%;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <image>
+            <Image url="@../img/fondoPapel.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="239.0" fitWidth="243.0" layoutX="254.0" layoutY="194.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/agendaPortada.jpg" />
+         </image>
+      </ImageView>
+      <Label layoutX="241.0" layoutY="50.0" text="AGENDA" textFill="RED">
+         <font>
+            <Font name="System Bold Italic" size="64.0" />
+         </font>
+      </Label>
+      <Label layoutX="302.0" layoutY="445.0" text="Registrar usuario">
+         <font>
+            <Font name="System Bold Italic" size="18.0" />
+         </font>
+      </Label>
+      <TextField id="usuRegTextField" fx:id="usuRegTextField" layoutX="264.0" layoutY="500.0" prefHeight="21.0" prefWidth="224.0" />
+      <Label layoutX="175.0" layoutY="505.0" text="Usuario:" />
+      <Label layoutX="163.0" layoutY="562.0" text="Password:" />
+      <Button id="btn_registro" layoutX="307.0" layoutY="628.0" mnemonicParsing="false" onAction="#registro" prefHeight="21.0" prefWidth="136.0" text="Registrar">
+         <font>
+            <Font name="System Italic" size="15.0" />
+         </font>
+      </Button>
+      <PasswordField id="passRegTextField" fx:id="passRegTextField" layoutX="264.0" layoutY="557.0" prefHeight="27.0" prefWidth="224.0" />
+   </children>
+</AnchorPane>
