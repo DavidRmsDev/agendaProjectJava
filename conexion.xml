@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <conexion>
-	<dir>jdbc:mysql://db4free.net:3306/agendaproject</dir>
-	<user>bidaideacorreo</user>
-	<password>bidaideacorreo</password>
+	<dir>jdbc:mysql://localhost:3306/agendaproject</dir>
+	<user>root</user>
+	<password></password>
 </conexion>

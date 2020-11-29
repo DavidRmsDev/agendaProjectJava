@@ -5,13 +5,19 @@
  */
 package controlador;
 
+import com.sun.jndi.toolkit.url.Uri;
 import dao.mysql.MySQLUsuarioDAO;
+import java.awt.Desktop;
+import java.net.URI;
 import java.net.URL;
 import java.sql.SQLException;
 import java.util.ResourceBundle;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
+import javafx.scene.control.Button;
+import javafx.scene.control.CheckBox;
+import javafx.scene.control.Hyperlink;
 import javafx.scene.control.TextField;
 import javax.swing.JOptionPane;
 import modelo.Metodo;
@@ -29,6 +35,12 @@ public class FXMLRegistroController implements Initializable {
     private TextField usuRegTextField;
     @FXML
     private TextField passRegTextField;
+    @FXML
+    private CheckBox checkBox;
+    @FXML
+    private Button botonRegistro;
+    @FXML
+    private Hyperlink link;
 
     /**
      * Initializes the controller class.
@@ -39,6 +51,7 @@ public class FXMLRegistroController implements Initializable {
     @Override
     public void initialize(URL url, ResourceBundle rb) {
         vaciarCampos();
+        botonRegistro.setDisable(true);
 
     }
 
@@ -67,21 +80,21 @@ public class FXMLRegistroController implements Initializable {
 
     @FXML
     private void registro(ActionEvent event) {
-        
-            if (new Conexion().comprobarConexion()) {
-                if (comprobarRellenos()) {
-                    Usuario u = crearUsuario();
-                    if (!comprobarUsuario()) {
-                        new MySQLUsuarioDAO().insertar(u);
-                        vaciarCampos();
-                        JOptionPane.showMessageDialog(null, "Inicie sesión");
-                        new Metodo().formularioFXML("FXMLInicio.fxml", "INICIAR_SESIÓN");
-                    } else {
-                        JOptionPane.showMessageDialog(null, "Nombre de usuario no disponible, ya está registrado");
-                    }
+
+        if (new Conexion().comprobarConexion()) {
+            if (comprobarRellenos()) {
+                Usuario u = crearUsuario();
+                if (!comprobarUsuario()) {
+                    new MySQLUsuarioDAO().insertar(u);
+                    vaciarCampos();
+                    JOptionPane.showMessageDialog(null, "Inicie sesión");
+                    new Metodo().formularioFXML("FXMLInicio.fxml", "INICIAR_SESIÓN");
+                } else {
+                    JOptionPane.showMessageDialog(null, "Nombre de usuario no disponible, ya está registrado");
                 }
             }
-        
+        }
+
     }
 
     private boolean comprobarLongitud() {
@@ -101,5 +114,24 @@ public class FXMLRegistroController implements Initializable {
     private boolean comprobarUsuario() {
         boolean existe = new MySQLUsuarioDAO().comprobarNombreUsuario(usuRegTextField.getText());
         return existe;
+    }
+
+    @FXML
+    private void checkboxPressed(ActionEvent event) {
+        if (checkBox.isSelected()) {
+            botonRegistro.setDisable(false);
+        } else {
+            botonRegistro.setDisable(true);
+        }
+    }
+
+    @FXML
+    private void linkPressed(ActionEvent event) {
+        try {
+            if (Desktop.isDesktopSupported() && Desktop.getDesktop().isSupported(Desktop.Action.BROWSE)) {
+                Desktop.getDesktop().browse(new URI("http://agendaproject.herokuapp.com/Privacidad"));
+            }
+        } catch (Exception e) {
+        }
     }
 }
